@@ -40,40 +40,545 @@
   </head>
   <body class="font-inter">
     <!-- main part  -->
-    <main class="w-11/12 bg-slate-400 mx-auto rounded-lg">
-      <nav class="flex justify-between my-10 items-center">
+    <main class="w-11/12 mx-auto rounded-lg my-10">
+      <!-- navbar section -->
+      <nav class="flex justify-between items-center">
         <div>
           <h2 class="text-3xl font-bold text-black cursor-pointer">P-Ticket</h2>
         </div>
         <div class="flex gap-5">
           <p
-            class="hover:text-white cursor-pointer transition-colors duration-200 ease-in-out"
+            class="hover:text-red-600 cursor-pointer transition-colors duration-200 ease-in-out"
           >
             Home
           </p>
           <p
-            class="hover:text-white cursor-pointer transition-colors duration-200 ease-in-out"
+            class="hover:text-red-600 cursor-pointer transition-colors duration-200 ease-in-out"
           >
             About
           </p>
           <p
-            class="hover:text-white cursor-pointer transition-colors duration-200 ease-in-out"
+            class="hover:text-red-600 cursor-pointer transition-colors duration-200 ease-in-out"
           >
             Destination
           </p>
           <p
-            class="hover:text-white cursor-pointer transition-colors duration-200 ease-in-out"
+            class="hover:text-red-600 cursor-pointer transition-colors duration-200 ease-in-out"
           >
             Search
           </p>
         </div>
         <div
-          class="flex gap-2 bg-green-200 rounded-xl py-1 px-4 cursor-pointer hover:bg-green-600 transition-colors duration-200 ease-in-out hover:text-white font-semibold"
+          class="flex gap-2 bg-green-200 rounded-xl py-2 px-5 items-center cursor-pointer hover:bg-green-600 transition-colors duration-200 ease-in-out hover:text-white font-semibold"
         >
           <button>Bus</button>
           <img src="images/bus-icon.png" alt="" />
         </div>
       </nav>
+      <!-- hero section -->
+      <section class="">
+        <!-- image section -->
+        <div
+          class="hero rounded-lg"
+          style="background-image: url('images/banner.png')"
+        >
+          <div class="hero-content text-neutral-content text-center py-40">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">
+                End-to-End Travel with
+                <span class="text-green-600">P Paribahan</span>
+              </h1>
+              <p class="mb-5">
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                .
+              </p>
+              <button
+                class="btn py-2 px-10 bg-green-500 text-white hover:bg-green-600 sm:mt-10"
+              >
+                Buy
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- image card section -->
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+          <!-- part 1 -->
+          <div
+            class="flex py-2 px-4 bg-slate-200 rounded-md hover:bg-slate-400 transition-colors duration-150 ease-in-out cursor-pointer border-b-2 border-green-400"
+          >
+            <div>
+              <img src="images/people.png" alt="" />
+            </div>
+            <div>
+              <h2>500K+</h2>
+              <p>Registered users</p>
+            </div>
+          </div>
+          <div
+            class="flex py-2 px-4 bg-slate-200 rounded-md hover:bg-slate-400 transition-colors duration-150 ease-in-out cursor-pointer border-b-2 border-green-400"
+          >
+            <div>
+              <img src="images/ticket-cupon.png" alt="" />
+            </div>
+            <div>
+              <h2>1.7 lacks</h2>
+              <p>Tickets sold</p>
+            </div>
+          </div>
+          <div
+            class="flex py-2 px-4 bg-slate-200 rounded-md hover:bg-slate-400 transition-colors duration-150 ease-in-out cursor-pointer border-b-2 border-green-400"
+          >
+            <div>
+              <img src="images/stoppage.png" alt="" />
+            </div>
+            <div>
+              <h2>80K+</h2>
+              <p>Rental Partners</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- card section -->
     </main>
+    <!-- section -->
+    <section
+      class="grid grid-cols-3 bg-slate-200 w-11/12 py-8 mx-auto rounded-lg gap-5 px-4"
+    >
+      <div class="col-span-2">
+        <div class="text-3xl">
+          <h1>Select Your Seat</h1>
+        </div>
+        <div class="border-b-2 border-dashed border-green-600 my-4"></div>
+        <div class="flex justify-between font-semibold">
+          <p>
+            <i class="fa-solid fa-couch"></i>
+            <span>Seat Available</span>
+          </p>
+          <p class="text-green-600">
+            <i class="fa-solid fa-couch"></i>
+            <span>Seat Available</span>
+          </p>
+        </div>
+        <div class="border-b-2 border-dashed border-green-600 my-4"></div>
+        <!-- section is start here -->
+        <section class="grid grid-cols-12 gap-y-5 mr-20 items-center">
+          <p class="col-span-1"></p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+          >
+            <p class="col-span-8"></p>
+            <button class="btn col-span-2">Seat</button>
+          </div>
+          <!-- row 1 -->
+          <p class="col-span-1">A</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+          >
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A1
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A2
+            </button>
+            <p class="col-span-2"></p>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A3
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A4
+            </button>
+          </div>
+          <!-- row 2 -->
+          <p class="col-span-1">A</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+          >
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A1
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A2
+            </button>
+            <p class="col-span-2"></p>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A3
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A4
+            </button>
+          </div>
+          <!--  -->
+          <p class="col-span-1">A</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+          >
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A1
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A2
+            </button>
+            <p class="col-span-2"></p>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A3
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A4
+            </button>
+          </div>
+          <!--  -->
+          <p class="col-span-1">A</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+          >
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A1
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A2
+            </button>
+            <p class="col-span-2"></p>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A3
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A4
+            </button>
+          </div>
+          <!--  -->
+          <p class="col-span-1">A</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+          >
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A1
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A2
+            </button>
+            <p class="col-span-2"></p>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A3
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A4
+            </button>
+          </div>
+          <!--  -->
+          <p class="col-span-1">A</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+          >
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A1
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A2
+            </button>
+            <p class="col-span-2"></p>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A3
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A4
+            </button>
+          </div>
+          <!--  -->
+          <p class="col-span-1">A</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+          >
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A1
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A2
+            </button>
+            <p class="col-span-2"></p>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A3
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A4
+            </button>
+          </div>
+          <!--  -->
+          <p class="col-span-1">A</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+          >
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A1
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A2
+            </button>
+            <p class="col-span-2"></p>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A3
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A4
+            </button>
+          </div>
+          <!--  -->
+          <p class="col-span-1">A</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+          >
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A1
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A2
+            </button>
+            <p class="col-span-2"></p>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A3
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A4
+            </button>
+          </div>
+          <!--  -->
+          <p class="col-span-1">A</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
+          >
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A1
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A2
+            </button>
+            <p class="col-span-2"></p>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A3
+            </button>
+            <button
+              class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
+            >
+              A4
+            </button>
+          </div>
+          <!--  -->
+        </section>
+      </div>
+      <div class="col-span-1 border-l-2 pl-5 border-dashed border-green-500">
+        <div class="text-3xl">
+          <h1>Select Your Seat</h1>
+        </div>
+        <div class="border-b-2 border-dashed border-green-500 my-4"></div>
+        <!--  -->
+        <section>
+          <div class="bg-[#f7f8f8] p-8 rounded-xl">
+            <h3 class="flex justify-between">
+              <p class="flex">
+                <span>Seat</span>
+                <span
+                  class="bg-green-500 w-4 h-4 p-2 text-white flex justify-center items-center font-normal rounded-full text-sm"
+                  >0</span
+                >
+              </p>
+              <p>Class</p>
+              <p>Price</p>
+            </h3>
+            <div class="border-b-2 border-dashed border-green-500 my-4"></div>
+            <ul class="space-y-5">
+              <h3
+                class="text-2xl font-semibold text-error capitalize text-center"
+              >
+                No seat Booked
+              </h3>
+            </ul>
+            <div class="border-b-2 border-dashed border-green-500 my-4"></div>
+            <div class="text-lg font-semibold flex justify-between">
+              <p>Total Price...</p>
+              <p>
+                <span>BDT.</span>
+                <span>****</span>
+              </p>
+            </div>
+            <div
+              class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between"
+            >
+              <input
+                class="input my-5 w-full input-primary"
+                type="text"
+                placeholder="have a cuopon?"
+                disabled
+              />
+              <button class="btn bg-green-500 text-white hover:bg-green-600">
+                Apply
+              </button>
+            </div>
+            <div class="text-lg font-semibold flex justify-between">
+              <p>Grand Total</p>
+              <p>
+                <span>BDT.</span>
+                <span>****</span>
+              </p>
+            </div>
+          </div>
+          <!-- form section -->
+          <div class="my-5">
+            <label class="form-control w-full my-3">
+              <div class="label">
+                <span class="font-bold text-base label-text"
+                  >Passenger Name*</span
+                >
+              </div>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="input input-bordered w-full max-w-xs"
+              />
+            </label>
+            <label class="form-control w-full my-3">
+              <div class="label">
+                <span class="font-bold text-base label-text"
+                  >Phone Number*</span
+                >
+              </div>
+              <input
+                type="number"
+                placeholder="Enter your phone number"
+                class="input input-bordered w-full max-w-xs"
+              />
+            </label>
+            <label class="form-control w-full my-3">
+              <div class="label">
+                <span class="font-bold text-base label-text">Email ID</span>
+              </div>
+              <input
+                type="email"
+                placeholder="Enter your email ID"
+                class="input input-bordered w-full max-w-xs"
+              />
+            </label>
+            <button
+              onclick="my_modal_1.showModal()"
+              class="btn bg-green-500 hover:bg-green-600 w-full text-white transition-colors duration-150"
+            >
+              Next
+            </button>
+            <!-- modals -->
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box my-5 flex flex-col">
+                <h3 class="text-3xl text-green-600 font-bold">Success</h3>
+                <p class="py-4">
+                  Thank you for Booking Our Bus Seats. We are working hard to
+                  find the best service and deals for you. Shortly you will find
+                  a confirmation in your email.
+                </p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <button class="btn">Continue</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            <div class="flex justify-between mt-5">
+              <a
+                class="underline hover:text-green-600 font-semibold transition-colors ease-in-out"
+                href="#"
+                >Terms and Condition</a
+              >
+              <a
+                class="underline hover:text-green-600 font-semibold transition-colors ease-in-out"
+                href="#"
+                >Cancelation Policy</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <script>
+      function Menu(e) {
+        e.name === "menu" ? (e.name = "close") : (e.name = "menu");
+      }
+    </script>
   </body>
 </html>
