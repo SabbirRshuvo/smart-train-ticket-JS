@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" date-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -42,7 +42,7 @@
     <!-- main part  -->
     <main class="w-11/12 mx-auto rounded-lg my-10">
       <!-- navbar section -->
-      <nav class="flex justify-between items-center">
+      <nav class="flex justify-between items-center mb-5">
         <div>
           <h2 class="text-3xl font-bold text-black cursor-pointer">P-Ticket</h2>
         </div>
@@ -69,7 +69,7 @@
           </p>
         </div>
         <div
-          class="flex gap-2 bg-green-200 rounded-xl py-2 px-5 items-center cursor-pointer hover:bg-green-600 transition-colors duration-200 ease-in-out hover:text-white font-semibold"
+          class="flex gap-2 bg-green-200 rounded-xl py-2 px-10 items-center cursor-pointer hover:bg-green-600 transition-colors duration-200 ease-in-out hover:text-white font-semibold"
         >
           <button>Bus</button>
           <img src="images/bus-icon.png" alt="" />
@@ -157,7 +157,7 @@
           </p>
           <p class="text-green-600">
             <i class="fa-solid fa-couch"></i>
-            <span>Seat Available</span>
+            <span id="available-seat"> 40</span>
           </p>
         </div>
         <div class="border-b-2 border-dashed border-green-600 my-4"></div>
@@ -176,268 +176,308 @@
             class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
           >
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
               A1
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
               A2
             </button>
             <p class="col-span-2"></p>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
               A3
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
               A4
             </button>
           </div>
           <!-- row 2 -->
-          <p class="col-span-1">A</p>
+          <p class="col-span-1">B</p>
           <div
             class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
           >
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A1
+              B1
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A2
+              B2
             </button>
             <p class="col-span-2"></p>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A3
+              B3
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A4
+              B4
             </button>
           </div>
           <!--  -->
-          <p class="col-span-1">A</p>
+          <p class="col-span-1">C</p>
           <div
             class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
           >
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A1
+              C1
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A2
+              C2
             </button>
             <p class="col-span-2"></p>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A3
+              C3
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A4
+              C4
             </button>
           </div>
           <!--  -->
-          <p class="col-span-1">A</p>
+          <p class="col-span-1">D</p>
           <div
             class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
           >
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A1
+              D1
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A2
+              D2
             </button>
             <p class="col-span-2"></p>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A3
+              D3
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A4
+              D4
             </button>
           </div>
           <!--  -->
-          <p class="col-span-1">A</p>
+          <p class="col-span-1">E</p>
           <div
             class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
           >
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A1
+              E1
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A2
+              E2
             </button>
             <p class="col-span-2"></p>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A3
+              E3
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A4
+              E4
             </button>
           </div>
           <!--  -->
-          <p class="col-span-1">A</p>
+          <p class="col-span-1">F</p>
           <div
             class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
           >
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A1
+              F1
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A2
+              F2
             </button>
             <p class="col-span-2"></p>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A3
+              F3
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A4
+              F4
             </button>
           </div>
           <!--  -->
-          <p class="col-span-1">A</p>
+          <p class="col-span-1">G</p>
           <div
             class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
           >
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A1
+              G1
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A2
+              G2
             </button>
             <p class="col-span-2"></p>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A3
+              G3
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A4
+              G4
             </button>
           </div>
           <!--  -->
-          <p class="col-span-1">A</p>
+          <p class="col-span-1">H</p>
           <div
             class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
           >
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A1
+              H1
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A2
+              H2
             </button>
             <p class="col-span-2"></p>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A3
+              H3
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A4
+              H4
             </button>
           </div>
           <!--  -->
-          <p class="col-span-1">A</p>
+          <p class="col-span-1">I</p>
           <div
             class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
           >
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A1
+              I1
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A2
+              I2
             </button>
             <p class="col-span-2"></p>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A3
+              I3
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A4
+              I4
             </button>
           </div>
           <!--  -->
-          <p class="col-span-1">A</p>
+          <p class="col-span-1">J</p>
           <div
             class="col-span-11 grid grid-cols-10 gap-16 items-center text-center"
           >
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A1
+              J1
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A2
+              J2
             </button>
             <p class="col-span-2"></p>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A3
+              J3
             </button>
             <button
+              onclick="handleButtonSeat(this)"
               class="col-span-2 btn hover:bg-green-600 hover:text-white transition-colors duration-150 ease-in-out"
             >
-              A4
+              J4
             </button>
           </div>
           <!--  -->
@@ -455,6 +495,7 @@
               <p class="flex">
                 <span>Seat</span>
                 <span
+                  id="seat-count"
                   class="bg-green-500 w-4 h-4 p-2 text-white flex justify-center items-center font-normal rounded-full text-sm"
                   >0</span
                 >
@@ -463,7 +504,7 @@
               <p>Price</p>
             </h3>
             <div class="border-b-2 border-dashed border-green-500 my-4"></div>
-            <ul class="space-y-5">
+            <ul id="no-seat-booked" class="space-y-5">
               <h3
                 class="text-2xl font-semibold text-error capitalize text-center"
               >
@@ -475,19 +516,23 @@
               <p>Total Price...</p>
               <p>
                 <span>BDT.</span>
-                <span>****</span>
+                <span id="total-price">****</span>
               </p>
             </div>
             <div
               class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between"
             >
               <input
+                id="coupon-input"
                 class="input my-5 w-full input-primary"
                 type="text"
                 placeholder="have a cuopon?"
                 disabled
               />
-              <button class="btn bg-green-500 text-white hover:bg-green-600">
+              <button
+                id="coupon-btn"
+                class="btn bg-green-500 text-white hover:bg-green-600"
+              >
                 Apply
               </button>
             </div>
@@ -575,10 +620,6 @@
       </div>
     </section>
 
-    <script>
-      function Menu(e) {
-        e.name === "menu" ? (e.name = "close") : (e.name = "menu");
-      }
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
