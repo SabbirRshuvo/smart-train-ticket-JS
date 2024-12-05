@@ -506,6 +506,7 @@
             <div class="border-b-2 border-dashed border-green-500 my-4"></div>
             <ul id="no-seat-booked" class="space-y-5">
               <h3
+                id="no-seat"
                 class="text-2xl font-semibold text-error capitalize text-center"
               >
                 No seat Booked
@@ -520,6 +521,7 @@
               </p>
             </div>
             <div
+              id="hide-coupon"
               class="flex items-center gap-2 border-y-2 py-2 my-2 border-dashed text-lg font-semibold justify-between"
             >
               <input
@@ -540,7 +542,7 @@
               <p>Grand Total</p>
               <p>
                 <span>BDT.</span>
-                <span>****</span>
+                <span id="grand-total">****</span>
               </p>
             </div>
           </div>
@@ -565,6 +567,7 @@
                 >
               </div>
               <input
+                id="phone-number"
                 type="number"
                 placeholder="Enter your phone number"
                 class="input input-bordered w-full max-w-xs"
@@ -581,6 +584,8 @@
               />
             </label>
             <button
+              disabled
+              id="next-btn"
               onclick="my_modal_1.showModal()"
               class="btn bg-green-500 hover:bg-green-600 w-full text-white transition-colors duration-150"
             >
@@ -598,7 +603,7 @@
                 </p>
                 <div class="modal-action">
                   <form method="dialog">
-                    <button class="btn">Continue</button>
+                    <button id="btn-continue" class="btn">Continue</button>
                   </form>
                 </div>
               </div>
